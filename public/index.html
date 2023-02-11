@@ -1,89 +1,154 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Ashish Job Portfolio</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <link rel="icon" href="https://cdn.discordapp.com/attachments/611678998245933057/1064662811852148777/image-removebg-preview.png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script> 
   </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <body>
+	  
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+	<header>
+		<nav>	
+		 <ul class="nav-bar"><div class="bg"></div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+			<li><a class="nav-link" href="#home">About Me</a></li>
+			<li><a class="nav-link" href="#projects">Projects</a></li>
+			<li><a class="nav-link" href="#experiences">Experiences</a></li>
+			<li><a class="nav-link" href="#contact">Contact</a></li>
+			
+		 </ul>
+			
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	
+	<main>
+		<!--─────────────────Home────────────────-->
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+			
+  <div id="header" style = "align-content: center">
+	<img src="https://media.giphy.com/media/lRLzrbhmh5pFf4jOga/giphy.gif" width="200"/>
+  </div>
+  
+		  <h3>Ashish Job<hr></h3>
+		  <p>A CS Major at UH eager to learn and experience anything that he can do under CS.</p>
+		  <p>Ready to devote as much time needed to any project.</p>
+          <p>Always open to receive feedback and criticism to understand and improve</p>
+			  
+		  <!--────links─────-->
+			 
+		  <div class="social-media">
+
+			  <a href="https://cdn.discordapp.com/attachments/800523149241352233/1074048394223431730/Resume_2-2023-1.png" target="_blank"><i class='fas fa-book'></i></a>
+			  <a href="https://github.com/Ashishjob" target="_blank"><i class='fab fa-github'></i></a>
+			  <a href="https://www.linkedin.com/in/ashish-job/" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+
+		    </div>
+			 
+		 </section> 
+	  </div>  
+		
+	  <!--───────────────Projects───────────────-->
+	  <div class="generalBody" id="projects"> 
+		 <h3>Projects<hr></h3>
+		  <p>Here are a few CS projects I have worked on</p>
+		  <div class="work-box">
+		  <div class="work">
+
+		<!--───────────────cards for my projects───────────────-->
+			<div class="card">
+			    <img class="work-img" src="https://cdn.discordapp.com/attachments/611678998245933057/1064660803908812840/image.png">
+			    <a href="https://github.com/Ashishjob/Portfolio-Website" target="_blank"> <!--Link to project-->
+				<div class="work-content">This website</div></a>
+            </div>
+
+			<div class="card">
+			    <img class="work-img" src="https://cdn.discordapp.com/attachments/800523149241352233/1064639053686915072/1000_F_236566469_PMzCUFZK3ECepoFTAqQIArdJ6jGdSoSi-PhotoRoom.png-PhotoRoom.png">
+				<a href="https://github.com/Ashishjob/Texas-Size" target="_blank"> <!--Link to project-->
+				<div class="work-content">Big Tex</div></a>
+            </div>
+            
+			<div class="card">
+			    <img class="work-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1f826f56213889.59a565ac0032a.jpg">
+				<a href="https://github.com/Ashishjob/Malayalam-MNIST" target="_blank"> <!--Link to project-->
+				<div class="work-content">Malayalam MNIST</div></a>
+            </div>
+		  
+		</div>  
+		  </div>
+	  </div>
+	  
+	  <div class="generalBody" id="experiences"> 
+		<h3>Experiences<hr></h3>
+		 <p>Here are a few ways I have been active in the CS community.</p>
+		 <div class="work-box">
+		 <div class="work">
+	   <!--───────────────cards of my experience───────────────-->
+
+        <div class="card">
+                <img class="work-img" src="https://cdn.discordapp.com/attachments/800523149241352233/1073604427262480474/teachercoco.png">
+                <div class="work-content">Code[Coogs] Executive Intern</div></a>
+            </div>   
+       
+        <div class="card">
+			   <img class="work-img" src="https://www.codecoogs.com/assets/computer-coco.828202de.png">
+			   <div class="work-content">Code[Coogs] Team Lead</div></a>
+		   </div>
+
+        <div class="card">
+               <img class="work-img" src="https://cdn.discordapp.com/attachments/800523149241352233/1064697943103389716/cougarai-removebg-preview.png">
+               <div class="work-content">CougarAI Event Coordinator</div></a>
+           </div>
+
+		   <div class="card">
+			   <img class="work-img" src="https://cdn.discordapp.com/attachments/800523149241352233/1073605756152201256/cougarcs-removebg-preview.png">
+			   <div class="work-content">CougarCS Tutor</div></a>
+		   </div>
+
+			<div class="card">
+				<img class="work-img" src="https://cdn.discordapp.com/attachments/611678998245933057/1064654709681561701/codred-removebg-preview.png">
+				<div class="work-content">2022 CodeRED Odyssey Participant</div></a>
+		   </div>
+
+		 </div>
+		 </div>
+	 </div>
+
+		<!--──────────────links to contact me────────────────-->
+	  <div id="contact">
+		   <h3>Contact Info<hr></h3>
+
+		   <p>Feel free to contact me</p>
+		    <div class="social-media">
+
+			  <a href="https://cdn.discordapp.com/attachments/800523149241352233/1074048394223431730/Resume_2-2023-1.png" target="_blank"><i class='fas fa-book'></i></a>
+			  <a href="https://github.com/Ashishjob" target="_blank"><i class='fab fa-github'></i></a>
+			  <a href="https://www.linkedin.com/in/ashish-job/" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+
+		    </div>
+
+		<!-- ──────────────written ways to contact me────────────── -->
+			<p>    <target="_blank"><i class='fa fa-envelope'></i> : ashishjob104@gmail.com</p></i>
+			<p>    <target="_blank"><i class='fa fa-phone'></i> : (832)-310-5582</p></i> 
+		  </div>
+	</main>
+  </div>
+
+  <script> src = 'firebase.js'</script>
   </body>
 </html>
